@@ -13,3 +13,30 @@
  *= require_tree .
  *= require_self
  */
+ div.header{
+  color: #5ba33e;
+  font-family: Georgia, serif;
+  text-align: center;
+  font-size: 22px;
+ }
+
+ .flex-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+ }
+
+ nav{
+  color: white;
+  font-size: 18px;
+  font-family: Georgia, serif;
+  background-color: #5ba33e;
+  padding-top: 10px;
+  padding-bottom: 10px;
+ }
+
+ .board-owner{
+  color: #5ba33e;
+  padding: 5px;
+  font-size: 12px;
+ }

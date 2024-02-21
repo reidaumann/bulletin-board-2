@@ -6,12 +6,13 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload"%>
     <%= javascript_importmap_tags %>
   </head>
 
   <body>
-    <nav>
+    <nav class="flex-container">
       <a href="/">Bulletin Board</a>
       <% if current_user == nil %>
         <a href="/users/sign_up">Sign Up</a>
@@ -23,10 +24,8 @@
 
     </nav>
 
-    <hr>
-
     <% if notice.present? %>
-      <div style="color: green">
+      <div style="color: white">
         <%= notice %>
       </div>
     <% end %>
